@@ -1,3 +1,4 @@
+<?php
 $sneakers = [
     [
         "id" => 1,
@@ -17,7 +18,7 @@ $sneakers = [
         "id" => 3,
         "name" => "Puma Speedcat OG",
         "cat" => "Performance",
-        "image" => "https://images.stockx.com/360/Puma-Speedcat-OG-Black-White/Images/Puma-Speedcat-OG-Black-White/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1720531405&amp;h=384",
+        "image" => "https://images.stockx.com/360/Puma-Speedcat-OG-Black-White/Images/Puma-Speedcat-OG-Black-White/Lv2/img01.jpg?w=576&amp;q=57&amp;dpr=2&amp;updated_at=1720531405&amp;h=384",
         "desc" => "Classic since the race tracks."
     ],
     [
@@ -43,3 +44,5 @@ $sneakers = [
     ],
   
 ];
+
+?>
