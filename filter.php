@@ -30,7 +30,7 @@ if ($selectedCat) {
 
 <?php foreach ($filtered as $item): ?>
     <div class="sneaker-box">
-        <img src="<?= $item['image'] ?>" alt=<?= $item['name'] ?>">
+        <img src="<?= $item['image'] ?>" alt="<?= $item['name'] ?>">
         <h2><?= $item['name'] ?></h2>
         <p><?= $item['cat'] ?></p>
         <a href="details.php?id=<?= $item['id'] ?>">See more</a>
