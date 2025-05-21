@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $all = array_merge($sneakers, $_SESSION['newones'] ?? []);
 ?>
 
-<h1>protected area</h1>
+<h1>Protected Area</h1>
 
 <form method="post">
     <input type="text" name="name" placeholder="Name" required>
@@ -31,7 +31,7 @@ $all = array_merge($sneakers, $_SESSION['newones'] ?? []);
 
 <hr>
 
-<h2>all sneakers</h2>
+<h2>All Sneakers</h2>
 
 <?php foreach ($all as $item): ?>
     <div>
@@ -39,7 +39,7 @@ $all = array_merge($sneakers, $_SESSION['newones'] ?? []);
         <h3><?= $item['name'] ?></h3>
         <p><?= $item['cat'] ?></p>
         <p><?= $item['desc'] ?></p>
-        <a href="protected-details.php?id=<?= $item['id'] ?>">Maximize</a>
+        <a href="protected-details.php?id=<?= $item['id'] ?>">Details</a>
     </div>
 <?php endforeach; ?>
 

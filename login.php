@@ -1,6 +1,6 @@
 <?php
-include 'includes/header.php'
-session_start();
+require_once 'auth.php';
+include 'includes/header.php';
 
 $validUser = 'admin';
 $validHash = password_hash('queroandardelouis', PASSWORD_DEFAULT);

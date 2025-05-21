@@ -1,6 +1,7 @@
 <?php
+require_once 'auth.php';
 require 'data.php';
-//include 'includes/header.php'
+include 'includes/header.php';
 
 $selectedCat = $_GET['cat'] ?? null;
 $filtered = [];
