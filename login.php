@@ -2,9 +2,9 @@
 session_start();
 
 $validUser = 'admin';
-$validHash = password_hash('queroandardelouis' PASSWORD_DEFAULT);
+$validHash = password_hash('queroandardelouis', PASSWORD_DEFAULT);
 
-$storedHash = '$2y$10$x...';
+$storedHash = '$2y$10$Jd8siocmLTTQHQCmWVT5VeVpzg/nGGHBN44vircnC6ID653arEg/O';
 
 $error = '';
 
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php endif; ?>
 
 <form method="post">
-    <input type="text" name="user" placeholder="Username">
-    <input type="password" name="pass" placeholder="Password">
+    <input type="text" name="user" placeholder="Username" required>
+    <input type="password" name="pass" placeholder="Password" required>
     <button type="submit">Login</button>
 </form>

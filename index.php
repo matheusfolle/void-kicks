@@ -7,7 +7,7 @@ require 'data.php';
 
 <?php foreach ($sneakers as $item): ?>
     <div class="sneaker-box">
-        <img src="<?= $item['image'] ?>" alt="<?= $item['name'] ?>" width="">
+        <img src="<?= $item['image'] ?>" alt="<?= $item['name'] ?>" width="300px">
         <h2><?= $item['name'] ?></h2>
         <p><?= $item['cat'] ?></p>
         <a href="details.php?id=<?= $item['id'] ?>">See more</a>
