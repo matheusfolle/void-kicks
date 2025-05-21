@@ -1,5 +1,6 @@
 <?php
 require 'data.php';
+//include 'includes/header.php'
 
 $selectedCat = $_GET['cat'] ?? null;
 $filtered = [];
@@ -15,7 +16,7 @@ if ($selectedCat) {
 }
 ?>
 
-<h1>Categories' Filter</h1>
+<h1>category filter</h1>
 
 <form method="get">
     <select name="cat">
@@ -36,3 +37,5 @@ if ($selectedCat) {
         <a href="details.php?id=<?= $item['id'] ?>">See more</a>
     </div>
 <?php endforeach; ?>
+
+<?php include 'includes/footer.php'; ?>

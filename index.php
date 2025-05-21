@@ -1,6 +1,6 @@
 <?php
 require 'data.php';
-//include 'includes/header.php';
+include 'includes/header.php';
 ?>
 
 <h1>void kicks catalogue</h1>
@@ -14,4 +14,4 @@ require 'data.php';
     </div>
     <?php endforeach; ?>
 
-    <?php include 'includes/footer.php'; ?> 
+    <?php include 'includes/footer.php'; ?>  

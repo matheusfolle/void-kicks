@@ -1,4 +1,5 @@
 <?php
+include 'includes/header.php'
 session_start();
 
 $notLoggedIn = !isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true;
@@ -24,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $all = array_merge($sneakers, $_SESSION['newones'] ?? []);
 ?>
 
-<h1>Protected Area - Add Sneaker</h1>
+<h1>protected area - add sneaker</h1>
 
 <form method="post">
     <input type="text" name="name" placeholder="Name" required>
@@ -36,7 +37,7 @@ $all = array_merge($sneakers, $_SESSION['newones'] ?? []);
 
 <hr>
 
-<h2>All Sneakers</h2>
+<h2>all sneakers</h2>
 
 <?php foreach ($all as $item): ?>
     <div>
@@ -46,3 +47,5 @@ $all = array_merge($sneakers, $_SESSION['newones'] ?? []);
         <p><?= $item['desc'] ?></p>
     </div>
 <?php endforeach; ?>
+
+<?php include 'includes/footer.php'; ?>

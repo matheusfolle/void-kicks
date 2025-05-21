@@ -1,4 +1,5 @@
 <?php
+include 'includes/header.php';
 require 'data.php';
 
 $id = $_GET['id'] ?? null;
@@ -20,3 +21,5 @@ foreach ($sneakers as $item) {
 <?php else: ?>
     <p>Sneaker not found.</p>
 <?php endif; ?>
+
+<?php include 'includes/footer.php'; ?>

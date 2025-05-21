@@ -1,4 +1,5 @@
 <?php
+include 'includes/header.php'
 session_start();
 
 $validUser = 'admin';
@@ -33,3 +34,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="password" name="pass" placeholder="Password" required>
     <button type="submit">Login</button>
 </form>
+
+<?php include 'includes/footer.php'; ?>
